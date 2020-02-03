@@ -1,0 +1,11 @@
+1_ 
+strpos();
+
+used for getting position of specific substring inside a string.
+
+$str = "hello World";
+$str2 = "world";
+
+strpos($str, $str2);
+
+//will return 6
