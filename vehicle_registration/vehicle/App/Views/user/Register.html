@@ -1,0 +1,28 @@
+{% extends "header.html" %}
+{% block title %}User{% endblock %}
+{% block body %}
+    <form method="POST">
+        <label>Fname</label>
+        <input type="text" name="info[fname]"><br>
+        <label>Lname</label>
+        <input type="text" name="info[Lname]"><br>
+        <label>Email</label>
+        <input type="Email" name="info[email]"><br>
+        <label >Password</label>
+        <input type="password" name="info[password]"><br>
+        <label>Phone NO.</label>
+        <input type="number" name="info[phone_no]" maxlength="10" minlength="8" ><br>
+        <label>Street</label>
+        <input type="text" name="addr[street]"><br>
+        <label>City</label>
+        <input type="text" name="addr[city]"><br>
+        <label>State</label>
+        <input type="text" name="addr[state]"><br>
+        <label>Country</label>
+        <input type="text" name="addr[Country]"><br>
+        <label>Pincode</label>
+        <input type="number" name="addr[pincode]" maxlength="4" minlength="6" ><br>
+        <input type="submit" name="submit">
+
+    </form>
+{% endblock %}

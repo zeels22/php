@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+    <title>{% block title%}{% endblock %}</title>
+</head>
+
+<body>
+    <a href="http://localhost/vehicle/public/User/User/dashboard">Home</a>
+    <a href="http://localhost/vehicle/public/User/User/logoutAction">Logout</a>
+    {% block body %}
+    <p>heyy</p>
+    {% endblock %}
+</body>
+
+</html>
