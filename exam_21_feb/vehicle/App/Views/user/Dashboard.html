@@ -1,0 +1,29 @@
+{% extends "header.html" %}
+{% block title %}User{% endblock %}
+{% block body %}
+<h3>User Dashboard</h3>
+<a href="http://localhost/vehicle/public/User/User/service">Request a Service</a><br>
+<table>
+    <tr>
+    <th>Service Id</th>
+    <th>User ID</th>
+    <th>Title</th>
+    <th>Vehicle Number</th>
+    <th>Licence Number</th>
+    <th>Date</th>
+    <th>timeSlot</th>
+    <th>issue</th>
+    <th>Service Center</th>
+    <th>status</th>
+    <th>Created Date</th>
+
+    </tr>
+    {% for data in datas%}
+<tr>{% for details in data%}
+<td>{{ details }}</td>
+
+{% endfor %}
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

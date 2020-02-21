@@ -1,0 +1,33 @@
+{% extends "header.html" %}
+{% block title %}User{% endblock %}
+{% block body %}
+<h3>Service Request Form</h3>
+<form method="POST">
+    <label>Title</label>
+    <input type="text" name="title"><br>
+    <label>vehicle Number</label>
+    <input type="number" name="vehicleNumber" maxlength="5" minlength="4" ><br>
+    <label>Licence Number</label>
+    <input type="number" name="licenceNumber" maxlength="5" minlength="4" ><br>
+    <label >Date</label>
+    <input type="date" name="Date" min="2020-02-21" value="2020-02-21"><br>
+    <label>Time Slot</label>
+    <select name="timeslot">
+        <option value="9">9to10</option>
+        <option value="10">10to11</option>
+        <option value="11">11t12</option>
+        <option value="12">12to1</option>
+        <option value="13">1to2</option>
+        <option value="14">2to3</option>
+        <option value="15">3to4</option>
+        <option value="16">4to5</option>
+        <option value="17">5to6</option>
+    </select><br>
+    <label>vehicle Issue</label>
+    <input type="text" name="issue"><br>
+    <label>Service Center</label>
+    <input type="text" name="serviceCenter"><br>
+    <input type="submit" name="submit">
+
+</form>
+{% endblock %}
